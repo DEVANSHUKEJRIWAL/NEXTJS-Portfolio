@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes radar-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+/* Apply black background globally */
+html, body {
+    background-color: #000; /* Black background */
+}
+
+/* Ensure all components have a black background */
+body {
+    .bg-black {
+        background-color: #000; /* Black background */
+    }
+}
+
+/* Example of a specific component */
+.animate-radar-spin {
+    animation: radar-spin 4s linear infinite;
+}
