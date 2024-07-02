@@ -22,10 +22,10 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "AI Content Generator",
+    title: "ScriptGen",
     description:
-      "A content generator that uses AI to create unique and engaging content for your website or blog. Tech Stack used:- NEXTJS, TailwindCSS, GEMINI API, Redis, Clerk",
-    link: "https://stripe.com",
+      "A content generator that uses AI to create unique and engaging content for your website or blog. Tech Stack used:- NEXTJS, TailwindCSS, GEMINI API, PostGreSQL, Clerk",
+    link: "https://github.com/DEVANSHUKEJRIWAL/ScriptGen",
    
   },
   {
