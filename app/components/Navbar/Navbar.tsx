@@ -23,22 +23,10 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 p-4 backdrop-blur bg-white/10 border-white/20 rounded-3xl", className)}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Projects">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-            <ProductItem
-              title="Algochurn"
-              href="https://algochurn.com"
-              src=""
-              description="Prepare for tech interviews like never before."
-            />
-            <ProductItem
-              title="Tailwind Master Kit"
-              href="https://tailwindmasterkit.com"
-              src=""
-              description="Production ready Tailwind css components for your next project"
-            />
-          </div>
-        </MenuItem>
+        
+        <MenuItem setActive={setActive} active={active} item="Projects"/>
+        
+      
         <MenuItem setActive={setActive} active={active} item="Skills">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">NEXT.JS</HoveredLink>
