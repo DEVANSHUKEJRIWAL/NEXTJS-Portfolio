@@ -1,22 +1,22 @@
-"use client";
-import { animate, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import { cn } from "@/app/utils/cn";
-import { GoCopilot } from "react-icons/go";
-import { SiClerk, SiDocker, SiGooglegemini, SiRedis, SiTypescript } from "react-icons/si";
+import {animate, motion} from "framer-motion";
+import React, {useEffect} from "react";
+import {cn} from "@/app/utils/cn";
+import {SiClerk, SiDocker, SiGooglegemini, SiRedis, SiTypescript} from "react-icons/si";
 
 export function CardDemo() {
     return (
         <div className="max-w-lg mx-auto">
             <Card className="bg-white shadow-lg rounded-lg overflow-hidden">
-                <CardSkeletonContainer className="p-4">
-                    <Skeleton />
+                <CardSkeletonContainer className="p-4 flex justify-center" showGradient>
+                    <Skeleton/>
                 </CardSkeletonContainer>
-                <CardTitle className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 p-4">
-                Always Leveling Up
+
+                <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 p-4 text-center">
+                    Always Leveling Up
                 </CardTitle>
-                <CardDescription className="text-base sm:text-lg md:text-xl text-gray-600 p-4">
-                Tech explorer, constantly pushing my skillset.
+
+                <CardDescription className="text-base sm:text-lg md:text-xl text-gray-600 p-4 text-center">
+                    Tech explorer, constantly pushing my skillset.
                 </CardDescription>
             </Card>
         </div>
@@ -26,50 +26,35 @@ export function CardDemo() {
 const Skeleton = () => {
     const scale = [1, 1.1, 1];
     const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
-    const sequence = [
-        [
-            ".circle-1",
-            {
-                scale,
-                transform,
-            },
-            { duration: 0.8 },
-        ],
-        [
-            ".circle-2",
-            {
-                scale,
-                transform,
-            },
-            { duration: 0.8 },
-        ],
-        [
-            ".circle-3",
-            {
-                scale,
-                transform,
-            },
-            { duration: 0.8 },
-        ],
-        [
-            ".circle-4",
-            {
-                scale,
-                transform,
-            },
-            { duration: 0.8 },
-        ],
-        [
-            ".circle-5",
-            {
-                scale,
-                transform,
-            },
-            { duration: 0.8 },
-        ],
-    ];
-
     useEffect(() => {
+        const sequence = [
+            [
+                ".circle-1",
+                { scale: [1, 1.1, 1], transform: ["translateY(0px)", "translateY(-4px)", "translateY(0px)"] },
+                { duration: 0.8 },
+            ],
+            [
+                ".circle-2",
+                { scale: [1, 1.1, 1], transform: ["translateY(0px)", "translateY(-4px)", "translateY(0px)"] },
+                { duration: 0.8 },
+            ],
+            [
+                ".circle-3",
+                { scale: [1, 1.1, 1], transform: ["translateY(0px)", "translateY(-4px)", "translateY(0px)"] },
+                { duration: 0.8 },
+            ],
+            [
+                ".circle-4",
+                { scale: [1, 1.1, 1], transform: ["translateY(0px)", "translateY(-4px)", "translateY(0px)"] },
+                { duration: 0.8 },
+            ],
+            [
+                ".circle-5",
+                { scale: [1, 1.1, 1], transform: ["translateY(0px)", "translateY(-4px)", "translateY(0px)"] },
+                { duration: 0.8 },
+            ],
+        ];
+
         // @ts-ignore
         animate(sequence, {
             repeat: Infinity,
@@ -80,25 +65,26 @@ const Skeleton = () => {
         <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
             <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
                 <Container className="h-8 w-8 circle-1">
-                    <SiRedis className="h-4 w-4 dark:text-white" style={{ color: 'red' }}/>
+                    <SiRedis className="h-4 w-4 dark:text-white" style={{color: 'red'}}/>
                 </Container>
                 <Container className="h-12 w-12 circle-2">
-                    <SiTypescript className="h-6 w-6 dark:text-white" />
+                    <SiTypescript className="h-6 w-6 dark:text-white"/>
                 </Container>
                 <Container className="circle-3">
-                    <SiGooglegemini className="h-8 w-8 dark:text-white" />
+                    <SiGooglegemini className="h-8 w-8 dark:text-white"/>
                 </Container>
                 <Container className="h-12 w-12 circle-4">
-                    <SiDocker className="h-6 w-6 dark:text-white" style={{ color: 'skyblue' }} />
+                    <SiDocker className="h-6 w-6 dark:text-white" style={{color: 'skyblue'}}/>
                 </Container>
                 <Container className="h-8 w-8 circle-5">
-                    <SiClerk className="h-4 w-4 dark:text-white " />
+                    <SiClerk className="h-4 w-4 dark:text-white "/>
                 </Container>
             </div>
 
-            <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
+            <div
+                className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
                 <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
-                    <Sparkles />
+                    <Sparkles/>
                 </div>
             </div>
         </div>
@@ -142,9 +128,9 @@ const Sparkles = () => {
 
 
 export const Card = ({
-    className,
-    children,
-}: {
+                         className,
+                         children,
+                     }: {
     className?: string;
     children: React.ReactNode;
 }) => {
@@ -161,9 +147,9 @@ export const Card = ({
 };
 
 export const CardTitle = ({
-    children,
-    className,
-}: {
+                              children,
+                              className,
+                          }: {
     children: React.ReactNode;
     className?: string;
 }) => {
@@ -180,9 +166,9 @@ export const CardTitle = ({
 };
 
 export const CardDescription = ({
-    children,
-    className,
-}: {
+                                    children,
+                                    className,
+                                }: {
     children: React.ReactNode;
     className?: string;
 }) => {
@@ -199,10 +185,10 @@ export const CardDescription = ({
 };
 
 export const CardSkeletonContainer = ({
-    className,
-    children,
-    showGradient = true,
-}: {
+                                          className,
+                                          children,
+                                          showGradient = true,
+                                      }: {
     className?: string;
     children: React.ReactNode;
     showGradient?: boolean;
@@ -222,9 +208,9 @@ export const CardSkeletonContainer = ({
 };
 
 const Container = ({
-    className,
-    children,
-}: {
+                       className,
+                       children,
+                   }: {
     className?: string;
     children: React.ReactNode;
 }) => {
@@ -242,7 +228,7 @@ const Container = ({
     );
 };
 
-export const ClaudeLogo = ({ className }: { className?: string }) => {
+export const ClaudeLogo = ({className}: { className?: string }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +240,7 @@ export const ClaudeLogo = ({ className }: { className?: string }) => {
             viewBox="0 0 512 512"
             className={className}
         >
-            <rect fill="#CC9B7A" width="512" height="512" rx="104.187" ry="105.042" />
+            <rect fill="#CC9B7A" width="512" height="512" rx="104.187" ry="105.042"/>
             <path
                 fill="#1F1F1E"
                 fillRule="nonzero"
@@ -264,7 +250,7 @@ export const ClaudeLogo = ({ className }: { className?: string }) => {
     );
 };
 
-export const OpenAILogo = ({ className }: { className?: string }) => {
+export const OpenAILogo = ({className}: { className?: string }) => {
     return (
         <svg
             className={className}
@@ -280,7 +266,7 @@ export const OpenAILogo = ({ className }: { className?: string }) => {
         </svg>
     );
 };
-export const GeminiLogo = ({ className }: { className?: string }) => {
+export const GeminiLogo = ({className}: { className?: string }) => {
     return (
         <svg
             fill="none"
@@ -301,16 +287,16 @@ export const GeminiLogo = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="matrix(16.1326 5.4553 -43.70045 129.2322 1.588 6.503)"
                 >
-                    <stop offset=".067" stop-color="#9168C0" />
-                    <stop offset=".343" stop-color="#5684D1" />
-                    <stop offset=".672" stop-color="#1BA1E3" />
+                    <stop offset=".067" stop-color="#9168C0"/>
+                    <stop offset=".343" stop-color="#5684D1"/>
+                    <stop offset=".672" stop-color="#1BA1E3"/>
                 </radialGradient>
             </defs>
         </svg>
     );
 };
 
-export const MetaIconOutline = ({ className }: { className?: string }) => {
+export const MetaIconOutline = ({className}: { className?: string }) => {
     return (
         <svg
             id="Layer_1"
@@ -329,10 +315,10 @@ export const MetaIconOutline = ({ className }: { className?: string }) => {
                     gradientTransform="matrix(1, 0, 0, -1, 0, 192)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop offset="0" stop-color="#0064e1" />
-                    <stop offset="0.4" stop-color="#0064e1" />
-                    <stop offset="0.83" stop-color="#0073ee" />
-                    <stop offset="1" stop-color="#0082fb" />
+                    <stop offset="0" stop-color="#0064e1"/>
+                    <stop offset="0.4" stop-color="#0064e1"/>
+                    <stop offset="0.83" stop-color="#0073ee"/>
+                    <stop offset="1" stop-color="#0082fb"/>
                 </linearGradient>
                 <linearGradient
                     id="linear-gradient-2"
@@ -343,8 +329,8 @@ export const MetaIconOutline = ({ className }: { className?: string }) => {
                     gradientTransform="matrix(1, 0, 0, -1, 0, 192)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop offset="0" stop-color="#0082fb" />
-                    <stop offset="1" stop-color="#0064e0" />
+                    <stop offset="0" stop-color="#0082fb"/>
+                    <stop offset="1" stop-color="#0064e0"/>
                 </linearGradient>
             </defs>
             <path
