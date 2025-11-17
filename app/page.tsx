@@ -1,12 +1,12 @@
 "use client"
 import {SpotlightPreview} from "./components/About/About";
-import {LoaderThree} from "@/app/components/Loader";
+import {LoaderThree} from "./components/Loader";
 import Preview from "./components/Preview";
 import {CardHoverEffectDemo} from "./components/Pro/Project";
 import {NavbarDemo} from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import {useState, useEffect} from "react";
-import {TimelineDemo} from "@/app/components/ui/Timeline";
+import {TimelineDemo} from "./components/ui/Timeline";
 
 
 export default function Home() {

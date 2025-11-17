@@ -1,7 +1,7 @@
 "use client";
 import React, {useState} from "react";
 import {cn} from "@/app/utils/cn";
-import {Floating_Dock} from "@/app/components/Floating_Dock";
+import {Floating_Dock} from "../Floating_Dock";
 import {
     IconBrandGithub,
     IconFileCv,

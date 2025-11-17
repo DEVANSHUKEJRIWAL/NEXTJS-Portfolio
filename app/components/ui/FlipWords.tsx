@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Pointer_Highlight} from "@/app/components/Pointer_Highlight";
+import {Pointer_Highlight} from "../Pointer_Highlight";
 
 
 const FlipWords = ({words = ["words"], duration = 3000}) => {
