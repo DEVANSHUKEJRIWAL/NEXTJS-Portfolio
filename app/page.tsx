@@ -1,6 +1,6 @@
 "use client"
 import {SpotlightPreview} from "./components/About/About";
-import {LoaderThree} from "@/app/components/ui/Loader";
+import {LoaderThree} from "@/app/components/Loader";
 import Preview from "./components/Preview";
 import {CardHoverEffectDemo} from "./components/Pro/Project";
 import {NavbarDemo} from "./components/Navbar/Navbar";

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import {FloatingDock} from "@/components/ui/floating-dock";
+import {Floating_Dock} from "@/app/components/Floating_Dock";
 import {
     IconBrandGithub,
     IconBrandX,
@@ -71,7 +71,7 @@ export function FloatingDockDemo() {
     ];
     return (
         <div className="flex items-center ">
-            <FloatingDock
+            <Floating_Dock
                 items={links}
             />
         </div>

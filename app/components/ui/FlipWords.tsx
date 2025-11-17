@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {PointerHighlight} from "@/components/ui/pointer-highlight";
+import {Pointer_Highlight} from "@/app/components/Pointer_Highlight";
 
 
 const FlipWords = ({words = ["words"], duration = 3000}) => {
@@ -39,12 +39,12 @@ export default function PointerHighlightDemo() {
             <div className="max-w-4xl w-full mx-auto text-left py-8 sm:py-12">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-normal sm:leading-tight mb-4">
                     Hello, I&apos;m{' '}
-                    <PointerHighlight>
+                    <Pointer_Highlight>
                         <span
                             className="px-2 py-1 sm:px-3 font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 inline-block">
                             Devanshu Kejriwal
                         </span>
-                    </PointerHighlight>
+                    </Pointer_Highlight>
                 </h1>
 
                 <div className="flex flex-col md:flex-row md:items-baseline flex-wrap mb-8">

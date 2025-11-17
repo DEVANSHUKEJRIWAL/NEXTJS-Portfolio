@@ -1,13 +1,12 @@
 "use client";
 import React, {useState} from "react";
 import {cn} from "@/app/utils/cn";
-import {FloatingDock} from "@/components/ui/floating-dock";
+import {Floating_Dock} from "@/app/components/Floating_Dock";
 import {
     IconBrandGithub,
     IconFileCv,
     IconMail,
     IconHome,
-    IconNewSection,
     IconTerminal2,
     IconBrandLinkedin
 } from "@tabler/icons-react";
@@ -63,7 +62,7 @@ function Navbar({className}: { className?: string }) {
                 className
             )}
         >
-            <FloatingDock
+            <Floating_Dock
                 items={dockLinks}
             />
         </div>
