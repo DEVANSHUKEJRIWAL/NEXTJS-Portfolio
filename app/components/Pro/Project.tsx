@@ -25,6 +25,12 @@ export function CardHoverEffectDemo() {
 
 export const projects = [
     {
+        title: "Campus_Sync",
+        description:
+            "Campus Sync is a gamified event platform built with React and Go that streamlines university attendance and boosts engagement through real-time leaderboards.",
+        link: "https://github.com/DEVANSHUKEJRIWAL/NEXTJS-Portfolio",
+    },
+    {
         title: "ScriptGen",
         description:
             "A content generator that uses AI to create unique and engaging content for your website or blog.",
@@ -53,11 +59,5 @@ export const projects = [
         description:
             "A portfolio website made using NEXTJS and TailwindCSS.",
         link: "https://devport-folio.netlify.app",
-    },
-    {
-        title: "Spotify_Clone",
-        description:
-            "A clone of Spotify made using ReactJS and TailwindCSS.",
-        link: "https://github.com/DEVANSHUKEJRIWAL/React_Spotify_Clone",
     },
 ];
