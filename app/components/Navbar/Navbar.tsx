@@ -41,7 +41,7 @@ function Navbar({className}: { className?: string }) {
         {
             title: "Resume",
             icon: <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300"/>,
-            href: "https://drive.google.com/file/d/1zWlXNHE8DVl6kF6OOd0prAXXoWFdVqrR/view?usp=sharing",
+            href: "https://drive.google.com/drive/u/0/folders/1GkWWGC8n7BtxJLozCsaF2VRV0I_15BNi",
         },
         {
             title: "Linkedin",
