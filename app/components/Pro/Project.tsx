@@ -4,8 +4,8 @@ import {BackgroundBeams} from "../ui/BackgroundTeams";
 
 export function CardHoverEffectDemo() {
     return (
-        <section id="projects" className="max-w-5xl mx-auto px-8">
-            <p className="text-white font-sans text-4xl font-bold -mb-5">Projects</p>
+        <section id="projects" className="max-w-5xl mx-auto px-8 py-16 md:py-24">
+            <h2 className="text-white font-sans text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Projects</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
                 {projects.map((project, index) => (
@@ -25,39 +25,33 @@ export function CardHoverEffectDemo() {
 
 export const projects = [
     {
-        title: "Campus_Sync",
+        title: "CampusSync",
         description:
-            "Campus Sync is a gamified event platform built with React and Go that streamlines university attendance and boosts engagement through real-time leaderboards.",
-        link: "https://github.com/DEVANSHUKEJRIWAL/NEXTJS-Portfolio",
+            "High-concurrency event platform in Go and PostgreSQL sustaining 1,000+ concurrent users at sub-200ms latency under k6 load tests via connection pooling, index tuning, and horizontal container scaling.",
+        link: "https://github.com/DEVANSHUKEJRIWAL/CampusSync",
     },
     {
-        title: "ScriptGen",
+        title: "KubeSentinel",
         description:
-            "A content generator that uses AI to create unique and engaging content for your website or blog.",
-        link: "https://github.com/DEVANSHUKEJRIWAL/ScriptGen",
+            "Predictive Kubernetes auto-scaler that forecasts CPU load from live Prometheus metrics with an ARIMA model (~20% average error) and drives HPA adjustments from a FastAPI control plane before demand peaks.",
+        link: "https://github.com/DEVANSHUKEJRIWAL/KubeSentinel",
     },
     {
-        title: "MUJ_EMS",
+        title: "TerpPlanner",
         description:
-            "A elective management system for Manipal University Jaipur made using MERN Stack.",
+            "Full-stack AI academic advisor on the Claude API exposing 10 server-side tools — prerequisite pathfinding, transcript profiling, GPA simulation — streamed over SSE into a Next.js frontend with a D3 prerequisite graph.",
+        link: "https://github.com/DEVANSHUKEJRIWAL/TerpPlanner",
+    },
+    {
+        title: "OmniSpec AI",
+        description:
+            "Autonomous testing agent running two LangGraph state machines over a shared Vitest runner to generate, retry, and self-heal tests, grounded by ts-morph type extraction and surfaced through a VS Code LSP server.",
+        link: "https://github.com/DEVANSHUKEJRIWAL/Auto-Unit-Test-Generator",
+    },
+    {
+        title: "MUJ Elective Management System",
+        description:
+            "Patented MERN platform for student records and elective allocation, launched into university-wide use; cut API response times ~60% with Redis caching and secured 5 user roles behind JWT/RBAC.",
         link: "https://github.com/DEVANSHUKEJRIWAL/MUJ-EMS",
-    },
-    {
-        title: "Cartique",
-        description:
-            "A ecommerce shopping app made using ReactJS and TailwindCSS with payment gateway integration.",
-        link: "https://cartique-shop.netlify.app",
-    },
-    {
-        title: "BashConf",
-        description:
-            "A cybersecurity conference website made using HTML, CSS, and JavaScript.",
-        link: "https://bashconf.netlify.app",
-    },
-    {
-        title: "PortFolio",
-        description:
-            "A portfolio website made using NEXTJS and TailwindCSS.",
-        link: "https://devport-folio.netlify.app",
     },
 ];

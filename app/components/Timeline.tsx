@@ -36,7 +36,7 @@ const TimelineEntryComponent = ({ title, content }: TimelineEntry) => {
                 </div>
                 <motion.h3
                     style={{ color: titleColor }}
-                    className="hidden md:block text-sm md:pl-20 md:text-5xl font-bold"
+                    className="hidden md:block text-sm md:pl-20 md:text-2xl lg:text-3xl font-bold"
                 >
                     {title}
                 </motion.h3>
@@ -77,10 +77,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     return (
         <div ref={containerRef} className="w-full bg-black dark:bg-neutral-950 font-sans md:px-10">
             <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-                <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-black dark:text-white max-w-4xl">
                     My Journey So Far 🚀
                 </h2>
-                <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+                <p className="text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg max-w-sm">
                     From developing scalable backend systems to leading student tech communities, here’s a look at how my experience has evolved over the years.
                 </p>
             </div>

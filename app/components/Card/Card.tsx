@@ -1,21 +1,21 @@
 import {animate, motion} from "framer-motion";
 import React, {useEffect} from "react";
 import {cn} from "@/app/utils/cn";
-import {SiClerk, SiDocker, SiGooglegemini, SiRedis, SiTypescript} from "react-icons/si";
+import {SiDocker, SiGooglegemini, SiKubernetes, SiRedis, SiTypescript} from "react-icons/si";
 
 export function CardDemo() {
     return (
         <div className="max-w-lg mx-auto">
-            <Card className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <Card className="bg-[rgba(40,40,40,0.70)] shadow-lg rounded-lg overflow-hidden border border-white/10">
                 <CardSkeletonContainer className="p-4 flex justify-center" showGradient>
                     <Skeleton/>
                 </CardSkeletonContainer>
 
-                <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 p-4 text-center">
+                <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-white p-4 text-center">
                     Always Leveling Up
                 </CardTitle>
 
-                <CardDescription className="text-base sm:text-lg md:text-xl text-gray-600 p-4 text-center">
+                <CardDescription className="text-base sm:text-lg md:text-xl text-neutral-400 p-4 text-center">
                     Tech explorer, constantly pushing my skillset.
                 </CardDescription>
             </Card>
@@ -77,7 +77,7 @@ const Skeleton = () => {
                     <SiDocker className="h-6 w-6 dark:text-white" style={{color: 'skyblue'}}/>
                 </Container>
                 <Container className="h-8 w-8 circle-5">
-                    <SiClerk className="h-4 w-4 dark:text-white "/>
+                    <SiKubernetes className="h-4 w-4 dark:text-white "/>
                 </Container>
             </div>
 

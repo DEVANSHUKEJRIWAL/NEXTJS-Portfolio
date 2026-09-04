@@ -30,14 +30,14 @@ const FlipWords = ({words = ["words"], duration = 3000}) => {
     );
 };
 
-const techStack = ["Next.", "React.", "MongoDB.", "SpringBoot.", "Java.", "Docker.", "Kubernetes."];
+const techStack = ["Go.", "Kafka.", "Kubernetes.", "Claude API.", "LangGraph.", "Next.", "AWS."];
 
 export default function PointerHighlightDemo() {
     return (
         <div id="home"
              className="w-full min-h-screen flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 antialiased">
             <div className="max-w-4xl w-full mx-auto text-left py-8 sm:py-12">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-normal sm:leading-tight mb-4">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-normal sm:leading-tight mb-4">
                     Hello, I&apos;m{' '}
                     <Pointer_Highlight>
                         <span
@@ -48,12 +48,12 @@ export default function PointerHighlightDemo() {
                 </h1>
 
                 <div className="flex flex-col md:flex-row md:items-baseline flex-wrap mb-8">
-                    <p className="text-lg sm:text-lg lg:text-xl font-medium text-gray-300">
-                        A dedicated developer with a keen eye for design, focusing on&nbsp;
+                    <p className="text-base sm:text-lg lg:text-xl font-medium text-neutral-300">
+                        Agentic AI &amp; full-stack developer building distributed systems with&nbsp;
                     </p>
 
                     <div
-                        className="text-2xl sm:text-3xl lg:text-4xl min-h-[4rem] sm:min-h-[5rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600">
+                        className="text-2xl sm:text-3xl lg:text-4xl min-h-[3.5rem] sm:min-h-[4.5rem] font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600">
                         <FlipWords words={techStack}/>
                     </div>
                 </div>

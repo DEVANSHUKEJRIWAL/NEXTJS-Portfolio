@@ -1,13 +1,8 @@
 import React from "react";
 import {IconContainer} from "./Icons";
 import {Radar} from "./Radar";
-import {IoLogoJavascript} from "react-icons/io5";
 import {FaGithub} from "react-icons/fa";
-import {SiMongodb} from "react-icons/si";
-import {RiNextjsFill} from "react-icons/ri";
-import {SiExpress} from "react-icons/si";
-import {FaReact} from "react-icons/fa";
-import {SiRapid} from "react-icons/si";
+import {SiGo, SiApachekafka, SiKubernetes, SiPostgresql, SiAmazonaws, SiDocker} from "react-icons/si";
 
 
 const Preview = () => {
@@ -16,29 +11,29 @@ const Preview = () => {
             className="relative flex h-96 w-full flex-col items-center justify-center space-y-4 overflow-hidden px-4 bg-black">
             <div className="mx-auto w-full max-w-3xl">
                 <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0">
-                    <IconContainer text="REST Api" icon={<SiRapid/>}/>
+                    <IconContainer text="Go" icon={<SiGo className="h-8 w-8 text-slate-600"/>}/>
                     <IconContainer
                         delay={0.4}
-                        text="NEXTJS"
-                        icon={<RiNextjsFill className="h-8 w-8 text-slate-600"/>}
+                        text="Kafka"
+                        icon={<SiApachekafka className="h-8 w-8 text-slate-600"/>}
                     />
                     <IconContainer
-                        text="ReactJS"
+                        text="Kubernetes"
                         delay={0.3}
-                        icon={<FaReact className="h-8 w-8 text-slate-600"/>}
+                        icon={<SiKubernetes className="h-8 w-8 text-slate-600"/>}
                     />
                 </div>
             </div>
             <div className="mx-auto w-full max-w-md">
                 <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0">
                     <IconContainer
-                        text="ExpressJS"
+                        text="Docker"
                         delay={0.5}
-                        icon={<SiExpress className="h-8 w-8 text-slate-600"/>}
+                        icon={<SiDocker className="h-8 w-8 text-slate-600"/>}
                     />
                     <IconContainer
-                        text="MONGODB"
-                        icon={<SiMongodb className="h-8 w-8 text-slate-600"/>}
+                        text="PostgreSQL"
+                        icon={<SiPostgresql className="h-8 w-8 text-slate-600"/>}
                         delay={0.8}
                     />
                 </div>
@@ -47,8 +42,8 @@ const Preview = () => {
                 <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0">
                     <IconContainer
                         delay={0.6}
-                        text="JavaScript"
-                        icon={<IoLogoJavascript className="h-8 w-8 text-slate-600"/>}
+                        text="AWS"
+                        icon={<SiAmazonaws className="h-8 w-8 text-slate-600"/>}
                     />
                     <IconContainer
                         delay={0.7}

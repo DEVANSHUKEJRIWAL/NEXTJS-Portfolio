@@ -4,67 +4,69 @@ import {Timeline} from "../Timeline";
 export function TimelineDemo() {
     const data = [
         {
-            title: "Software Developer Intern – BNP Paribas (2024)",
+            title: "Software Engineer Intern, AI Platform – Uniqus Consultech (Jun–Aug 2026)",
             content: (
                 <div className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base leading-relaxed">
-                    Enhanced backend services using <strong>Java Spring Boot</strong> and
-                    implemented <strong>integration testing with WireMock</strong>.
-                    Collaborated with frontend teams to improve the Audit Trail dashboard,
-                    optimizing data flow and system performance across microservices.
+                    Led a 5-engineer team building a production 9-agent AI platform,
+                    owning the inter-agent messaging layer end to end. Replaced
+                    point-to-point service calls with a single <strong>Apache Kafka</strong>{" "}
+                    message bus spanning 15 workflow event types, and hardened agent
+                    workflows with at-least-once delivery and idempotent upserts.
                 </div>
             ),
         },
         {
-            title: "Technical Intern – Uniqus Consultech (2023)",
+            title: "Software Developer Intern – BNP Paribas (2025)",
             content: (
                 <div className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base leading-relaxed">
-                    Developed full-stack features using <strong>React.js</strong> and{" "}
-                    <strong>Node.js</strong>. Worked on optimizing MongoDB queries and
-                    improving backend API response times, enhancing overall system
-                    efficiency and UX.
+                    Re-architected 3 monolithic <strong>Spring Boot</strong> services into
+                    event-driven microservices shipped through <strong>Docker</strong> and{" "}
+                    <strong>Kubernetes</strong> CI/CD pipelines. Built a security validation
+                    framework enforcing pre-merge checks on auth, input validation, and TLS,
+                    and cleared every critical SonarQube finding across 8 services with new
+                    REST API integration tests.
                 </div>
             ),
         },
         {
-            title: "Open Source Contributor - GSSoC '23",
+            title: "Software Developer Intern – Manipal University Jaipur (2024)",
             content: (
                 <div className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base leading-relaxed">
-                    Developed full-stack features using <strong>React.js</strong> and{" "}
-                    <strong>Node.js</strong>. Worked on optimizing MongoDB queries and
-                    improving backend API response times, enhancing overall system
-                    efficiency and UX.
+                    Directed a 3-person MERN team to launch the MUJ Elective Management
+                    System into university-wide use — now an{" "}
+                    <strong>Indian-patented</strong> platform. Cut API response times ~60%
+                    (400ms → 150ms) with Redis caching, and secured 5 user roles behind{" "}
+                    <strong>JWT</strong> and role-based access control.
                 </div>
             ),
         },
         {
-            title: "Vice Chairperson – Cyberspace Club (2022)",
+            title: "M.Eng. Software Engineering – University of Maryland (2025–2027)",
             content: (
                 <div className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base leading-relaxed">
-                    Led a 20+ member team to organize hackathons, coding workshops, and
-                    cybersecurity challenges. Mentored peers in{" "}
-                    <strong>web development</strong> and cloud fundamentals, fostering a
-                    culture of technical growth and collaboration.
+                    Pursuing a Master of Engineering with a Graduate Certificate in Cloud
+                    Engineering (GPA: 3.61/4.0), building on a B.Tech in Computer Science
+                    and Engineering from Manipal University Jaipur (CGPA: 8.70/10).
                 </div>
             ),
         },
         {
-            title: "Convenor – Novus Tech Fest (2022)",
+            title: "Publication & Patent",
             content: (
                 <div className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base leading-relaxed">
-                    Managed a cross-functional team to plan and execute the annual college
-                    tech festival, coordinating with sponsors and participants to deliver
-                    impactful technical events and workshops.
+                    Co-authored <strong>&ldquo;An Agentic AI Architecture for Responding to
+                    FOIA Requests&rdquo;</strong> with Prof. Jason R. Baron, presented at the
+                    Workshop on AI and Open Government, ICAIL 2026, Singapore. Holds a
+                    granted Indian patent for the MUJ Elective Management System.
                 </div>
             ),
         },
         {
-            title: "Full Stack Developer Journey (Present)",
+            title: "Vice Chairperson – Cyber Space Community (2023–2024)",
             content: (
                 <div className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base leading-relaxed">
-                    Building scalable, cloud-ready web apps using{" "}
-                    <strong>Next.js, React, Spring Boot, and AWS</strong>. Exploring{" "}
-                    <strong>DevOps, microservices, and AI integration</strong> to create
-                    next-gen digital experiences.
+                    Led a 150-member team, organizing 20+ events and workshops promoting
+                    awareness across cybersecurity and other technical domains.
                 </div>
             ),
         },
