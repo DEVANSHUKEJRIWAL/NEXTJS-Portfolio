@@ -41,12 +41,12 @@ function Navbar({className}: { className?: string }) {
         {
             title: "Resume",
             icon: <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300"/>,
-            href: "https://drive.google.com/file/d/1UrCsCp_G8_ZPxTwgS0Wv6f2SyYnQYofM/view?usp=sharing",
+            href: "https://drive.google.com/file/d/15L6brFZPWhxz6S_unEpo8ebeI2_ej5QV/view?usp=sharing",
         },
         {
             title: "Linkedin",
             icon: <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300"/>,
-            href: "https://www.linkedin.com/in/devanshukejriwal/",
+            href: "https://www.linkedin.com/in/devanshu-kejriwal/",
         },
         {
             title: "GitHub",
